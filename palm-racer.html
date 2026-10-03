@@ -10,91 +10,219 @@
 
 <body>
 
-    <header>
-        <h1>Palm Racer</h1>
-        <h2>Hand-Gesture Controlled Robotic Vehicle</h2>
-        <p>Python • OpenCV • MediaPipe • CircuitPython • Hardware</p>
+    <header class="project-hero">
+        <div class="hero-content">
+            <a class="back-link" href="index.html">← Back to Portfolio</a>
+
+            <h1>Palm Racer</h1>
+            <h2>Hand-Gesture Controlled Robotic Vehicle</h2>
+
+            <div class="tech-tags">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>MediaPipe</span>
+                <span>CircuitPython</span>
+                <span>Hardware</span>
+            </div>
+
+            <p class="hero-description">
+                A robotic vehicle that turns real-time hand gestures into
+                physical movement using computer vision and embedded hardware.
+            </p>
+        </div>
     </header>
 
-    <main>
 
-        <p>
-            <a href="index.html">← Back to Portfolio</a>
-        </p>
+    <main class="project-page">
 
-        <h2>Project Overview</h2>
+        <!-- OVERVIEW -->
+        <section class="project-section">
+            <p class="section-label">01 — OVERVIEW</p>
+            <h2>Project Overview</h2>
 
-        <p>
-            Palm Racer is a real-time hand-gesture-controlled robotic vehicle
-            developed during UC San Diego's Summer Internship Preparatory
-            Program (SIPP). The system uses computer vision to recognize hand
-            gestures and translate them into movement commands for the vehicle.
-        </p>
-
-        <h2>How It Works</h2>
-
-        <section>
-            <p>
-                Camera → OpenCV / MediaPipe → Hand Gesture Detection →
-                Python → Serial Communication → Metro M0 Express →
-                L298N Motor Driver → DC Motors
+            <p class="lead-text">
+                Palm Racer is a real-time hand-gesture-controlled robotic vehicle
+                developed during UC San Diego's Summer Internship Preparatory
+                Program (SIPP). The system recognizes hand gestures through a
+                camera and converts them into movement commands for the vehicle.
             </p>
         </section>
 
-        <img src="solution.png" alt="Palm Racer gesture control solution" class="project-image">
 
-        <h2>Hardware</h2>
+        <!-- HOW IT WORKS -->
+        <section class="project-section">
+            <p class="section-label">02 — SYSTEM</p>
+            <h2>How It Works</h2>
 
-        <ul>
-            <li>Metro M0 Express microcontroller</li>
-            <li>L298N motor driver</li>
-            <li>DC motors</li>
-            <li>Battery pack</li>
-            <li>Custom-built chassis</li>
-            <li>Jumper wires and soldered connections</li>
-        </ul>
+            <div class="process-card">
+                <span>📷 Camera</span>
+                <strong>→</strong>
+                <span>👋 Gesture Detection</span>
+                <strong>→</strong>
+                <span>🐍 Python</span>
+                <strong>→</strong>
+                <span>⚡ Metro M0</span>
+                <strong>→</strong>
+                <span>⚙️ Motor Driver</span>
+                <strong>→</strong>
+                <span>🏎️ Movement</span>
+            </div>
 
-        <h2>Software</h2>
+            <figure class="project-image">
+                <img src="solution.png"
+                     alt="Palm Racer gesture recognition and control system">
+                <figcaption>
+                    Gesture recognition and command mapping used to control Palm Racer.
+                </figcaption>
+            </figure>
+        </section>
 
-        <ul>
-            <li>Python</li>
-            <li>OpenCV</li>
-            <li>MediaPipe</li>
-            <li>CircuitPython</li>
-        </ul>
 
-        <img src="resources.png" alt="Software and hardware resources used for Palm Racer" class="project-image">
+        <!-- TECHNOLOGY -->
+        <section class="project-section">
+            <p class="section-label">03 — TECHNOLOGY</p>
+            <h2>Built With</h2>
 
-        <h2>My Contribution</h2>
+            <div class="two-column">
 
-        <p>
-            I developed and integrated the hand-gesture recognition system,
-            connected the software to the vehicle's microcontroller, and built
-            and wired the physical prototype.
-        </p>
+                <div class="info-card">
+                    <h3>⚙ Hardware</h3>
+                    <ul>
+                        <li>Metro M0 Express microcontroller</li>
+                        <li>L298N motor driver</li>
+                        <li>DC motors</li>
+                        <li>4×AA battery pack</li>
+                        <li>Custom-built chassis</li>
+                        <li>Jumper wires & soldered connections</li>
+                    </ul>
+                </div>
 
-        <h2>Engineering Process</h2>
+                <div class="info-card">
+                    <h3>⌨ Software</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>OpenCV</li>
+                        <li>MediaPipe</li>
+                        <li>CircuitPython</li>
+                    </ul>
+                </div>
 
-        <p>
-            The project involved integrating computer vision, serial
-            communication, embedded programming, and electronic hardware into
-            a single working system. I tested the vehicle's movement commands,
-            debugged hardware and software integration issues, and iterated on
-            the physical prototype.
-        </p>
+            </div>
 
-        <img src="prototype.png" alt="Palm Racer physical prototype" class="project-image">
+            <figure class="project-image">
+                <img src="resources.png"
+                     alt="Software and hardware resources used for Palm Racer">
+                <figcaption>
+                    Core software libraries and electronic components used in the project.
+                </figcaption>
+            </figure>
+        </section>
 
-        <h2>Final Result</h2>
 
-        <p>
-            The final prototype could interpret hand gestures and translate
-            them into forward, backward, left, right, and stop commands in
-            real time.
-        </p>
+        <!-- PROTOTYPE -->
+        <section class="project-section">
+            <p class="section-label">04 — PROTOTYPE</p>
+            <h2>From Code to Hardware</h2>
+
+            <p>
+                I assembled the vehicle, wired the electronic components,
+                connected the motor-control hardware, and tested the system
+                through multiple iterations.
+            </p>
+
+            <figure class="project-image">
+                <img src="prototype.png"
+                     alt="Palm Racer physical prototype">
+                <figcaption>
+                    The physical Palm Racer prototype with its microcontroller,
+                    motor driver, wiring, motors, and chassis.
+                </figcaption>
+            </figure>
+        </section>
+
+
+        <!-- CONTRIBUTION -->
+        <section class="project-section">
+            <p class="section-label">05 — MY ROLE</p>
+            <h2>My Contribution</h2>
+
+            <div class="contribution-grid">
+
+                <div class="mini-card">
+                    <span>👋</span>
+                    <h3>Computer Vision</h3>
+                    <p>
+                        Developed the hand-gesture recognition system using
+                        OpenCV and MediaPipe.
+                    </p>
+                </div>
+
+                <div class="mini-card">
+                    <span>💻</span>
+                    <h3>Software Integration</h3>
+                    <p>
+                        Connected gesture recognition to the vehicle's
+                        microcontroller and movement commands.
+                    </p>
+                </div>
+
+                <div class="mini-card">
+                    <span>🔧</span>
+                    <h3>Hardware</h3>
+                    <p>
+                        Built, wired, tested, and iterated on the physical
+                        robotic vehicle.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ENGINEERING PROCESS -->
+        <section class="project-section">
+            <p class="section-label">06 — ENGINEERING PROCESS</p>
+            <h2>Building the System</h2>
+
+            <p class="lead-text">
+                The main engineering challenge was connecting several systems
+                into one reliable pipeline: computer vision, serial
+                communication, embedded programming, electronics, and mechanical
+                movement.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Test → Debug → Iterate</strong>
+                <p>
+                    I repeatedly tested movement commands, diagnosed software
+                    and hardware integration problems, adjusted the physical
+                    prototype, and refined the system until gestures could
+                    reliably control the vehicle.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- RESULT -->
+        <section class="project-section result-section">
+            <p class="section-label">07 — RESULT</p>
+            <h2>Final Result</h2>
+
+            <div class="result-card">
+                <div class="result-icon">✓</div>
+
+                <div>
+                    <h3>Real-Time Gesture Control</h3>
+                    <p>
+                        The final prototype successfully interpreted hand
+                        gestures and translated them into forward, backward,
+                        left, right, and stop commands in real time.
+                    </p>
+                </div>
+            </div>
+        </section>
 
     </main>
 
 </body>
-
 </html>
