@@ -72,3 +72,325 @@ a:hover {
     margin: 30px auto 50px auto;
     border-radius: 12px;
 }
+
+/* =========================================
+   PALM RACER PROJECT PAGE
+   ========================================= */
+
+.project-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 28px 100px;
+}
+
+
+/* HERO */
+
+.project-hero {
+    background: linear-gradient(135deg, #102746, #18385f);
+    color: white;
+    padding: 55px 30px 65px;
+}
+
+.hero-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.project-hero h1 {
+    font-size: 58px;
+    margin: 20px 0 8px;
+    letter-spacing: -2px;
+}
+
+.project-hero h2 {
+    color: #dbeafe;
+    margin: 0 0 22px;
+    font-size: 23px;
+}
+
+.hero-description {
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #d7e3f4;
+}
+
+.back-link {
+    color: #a9d4ff;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    color: white;
+}
+
+
+/* TECH TAGS */
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.tech-tags span {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    padding: 7px 14px;
+    border-radius: 100px;
+    font-size: 14px;
+}
+
+
+/* SECTIONS */
+
+.project-section {
+    margin-bottom: 85px;
+}
+
+.project-section h2 {
+    margin-top: 6px;
+    margin-bottom: 22px;
+    font-size: 32px;
+    color: #182b49;
+}
+
+.section-label {
+    color: #1473e6;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.lead-text {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 900px;
+}
+
+
+/* PROCESS */
+
+.process-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    background: white;
+    border: 1px solid #dce3ec;
+    border-radius: 16px;
+    padding: 28px;
+
+    margin: 25px 0 35px;
+}
+
+.process-card span {
+    font-weight: 600;
+}
+
+.process-card strong {
+    color: #1473e6;
+    font-size: 22px;
+}
+
+
+/* IMPORTANT: FIX HUGE IMAGES */
+
+.project-image {
+    margin: 35px auto;
+    max-width: 900px;
+}
+
+.project-image img {
+    display: block;
+
+    width: 100%;
+    max-width: 900px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    border-radius: 16px;
+    border: 1px solid #dce3ec;
+
+    box-shadow:
+        0 12px 30px rgba(24, 43, 73, 0.08);
+}
+
+.project-image figcaption {
+    text-align: center;
+    color: #65758b;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+
+/* HARDWARE / SOFTWARE */
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 30px 0;
+}
+
+.info-card {
+    background: white;
+    border: 1px solid #dce3ec;
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.info-card h3 {
+    color: #182b49;
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.info-card li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+
+/* CONTRIBUTION */
+
+.contribution-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.mini-card {
+    background: white;
+    border: 1px solid #dce3ec;
+    border-radius: 16px;
+    padding: 25px;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.mini-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(24, 43, 73, 0.10);
+}
+
+.mini-card > span {
+    font-size: 28px;
+}
+
+.mini-card h3 {
+    color: #182b49;
+    margin-bottom: 8px;
+}
+
+.mini-card p {
+    color: #53657a;
+    line-height: 1.6;
+}
+
+
+/* ENGINEERING HIGHLIGHT */
+
+.highlight-box {
+    margin-top: 30px;
+    padding: 28px 32px;
+
+    background: #eef6ff;
+    border-left: 5px solid #1473e6;
+    border-radius: 0 14px 14px 0;
+}
+
+.highlight-box strong {
+    color: #182b49;
+    font-size: 20px;
+}
+
+.highlight-box p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+
+/* RESULT */
+
+.result-section {
+    border-top: 1px solid #dce3ec;
+    padding-top: 50px;
+}
+
+.result-card {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+
+    background: linear-gradient(135deg, #eef6ff, #ffffff);
+
+    border: 1px solid #cfe1f6;
+    border-radius: 18px;
+
+    padding: 30px;
+}
+
+.result-icon {
+    min-width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1473e6;
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.result-card h3 {
+    margin: 0 0 7px;
+    color: #1473e6;
+}
+
+.result-card p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    .project-hero h1 {
+        font-size: 42px;
+    }
+
+    .two-column,
+    .contribution-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .process-card strong {
+        transform: rotate(90deg);
+        margin-left: 20px;
+    }
+
+    .project-page {
+        padding: 40px 20px 70px;
+    }
+}
