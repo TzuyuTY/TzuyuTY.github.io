@@ -202,34 +202,25 @@ a:hover {
 /* IMPORTANT: FIX HUGE IMAGES */
 
 .project-image {
-    margin: 35px auto;
-    max-width: 900px;
+    max-width: 720px;
+    margin: 32px auto 55px;
 }
 
 .project-image img {
     display: block;
-
     width: 100%;
-    max-width: 900px;
-
     height: auto;
-
     margin: 0 auto;
-
-    border-radius: 16px;
+    border-radius: 14px;
     border: 1px solid #dce3ec;
-
-    box-shadow:
-        0 12px 30px rgba(24, 43, 73, 0.08);
+    box-shadow: 0 10px 25px rgba(24, 43, 73, 0.08);
 }
-
 .project-image figcaption {
     text-align: center;
     color: #65758b;
-    font-size: 14px;
-    margin-top: 12px;
+    font-size: 13px;
+    margin-top: 10px;
 }
-
 
 /* HARDWARE / SOFTWARE */
 
