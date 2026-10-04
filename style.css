@@ -385,3 +385,21 @@ a:hover {
         padding: 40px 20px 70px;
     }
 }
+
+/* Palm Racer demo video */
+.project-video {
+    max-width: 750px;
+    margin: 45px auto;
+}
+
+.project-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+}
+
+.project-video .media-caption {
+    margin-top: 12px;
+    text-align: center;
+}
