@@ -1039,3 +1039,341 @@ body::after {
     }
 
 }
+
+/* =========================================
+   STRONG NEON GLOW — TINA-INSPIRED
+   ========================================= */
+
+:root {
+    --neon-cyan: #00f5d4;
+    --neon-blue: #38bdf8;
+    --neon-deep-blue: #2563eb;
+}
+
+
+/* =========================================
+   HERO NEON ACCENT
+   ========================================= */
+
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+/* glowing line under hero area */
+header::after {
+    content: "";
+    position: absolute;
+
+    left: 10%;
+    bottom: 0;
+
+    width: 80%;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #00f5d4,
+        #38bdf8,
+        #2563eb,
+        transparent
+    );
+
+    box-shadow:
+        0 0 5px #00f5d4,
+        0 0 12px rgba(0, 245, 212, 0.7),
+        0 0 25px rgba(56, 189, 248, 0.45);
+}
+
+
+/* subtle glow behind your name */
+
+header h1 {
+    text-shadow:
+        0 0 25px rgba(56, 189, 248, 0.12);
+}
+
+
+/* =========================================
+   PROJECT CARDS
+   ========================================= */
+
+.project-link section {
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            #101827,
+            #0b1220
+        );
+
+    border: 1px solid rgba(56, 189, 248, 0.25);
+
+    box-shadow:
+        0 0 8px rgba(56, 189, 248, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* neon glow when hovering */
+
+.project-link section:hover {
+    transform: translateY(-7px);
+
+    border-color: #00f5d4;
+
+    box-shadow:
+        0 0 5px rgba(0, 245, 212, 0.9),
+        0 0 15px rgba(0, 245, 212, 0.50),
+        0 0 35px rgba(0, 245, 212, 0.20),
+        0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   GLOWING CORNER EFFECT
+   ========================================= */
+
+.project-link section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    top: -60px;
+    right: -60px;
+
+    border-radius: 50%;
+
+    background: #00f5d4;
+
+    filter: blur(75px);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.5s ease;
+}
+
+
+.project-link section:hover::after {
+    opacity: 0.22;
+
+    transform: scale(1.4);
+}
+
+
+/* =========================================
+   PROJECT TITLES
+   ========================================= */
+
+.project-link h3 {
+    color: #f8fafc;
+
+    transition:
+        color 0.25s ease,
+        text-shadow 0.25s ease;
+}
+
+
+.project-link section:hover h3 {
+    color: white;
+
+    text-shadow:
+        0 0 8px rgba(0, 245, 212, 0.35),
+        0 0 18px rgba(56, 189, 248, 0.20);
+}
+
+
+/* =========================================
+   MAIN HEADINGS
+   ========================================= */
+
+main > h2 {
+    position: relative;
+
+    display: inline-block;
+}
+
+
+/* little neon line beside headings */
+
+main > h2::after {
+    content: "";
+
+    display: inline-block;
+
+    width: 55px;
+    height: 2px;
+
+    margin-left: 16px;
+    margin-bottom: 7px;
+
+    background: linear-gradient(
+        90deg,
+        #00f5d4,
+        #38bdf8,
+        transparent
+    );
+
+    box-shadow:
+        0 0 8px rgba(0, 245, 212, 0.7);
+}
+
+
+/* =========================================
+   PROJECT PAGE CARDS
+   ========================================= */
+
+.project-section {
+    border: 1px solid rgba(56, 189, 248, 0.18);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.project-section:hover {
+    border-color: rgba(0, 245, 212, 0.65);
+
+    box-shadow:
+        0 0 5px rgba(0, 245, 212, 0.45),
+        0 0 20px rgba(0, 245, 212, 0.12),
+        0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================
+   SECTION LABEL NEON
+   ========================================= */
+
+.section-label {
+    color: #00f5d4 !important;
+
+    text-shadow:
+        0 0 6px rgba(0, 245, 212, 0.6),
+        0 0 14px rgba(0, 245, 212, 0.25);
+}
+
+
+/* =========================================
+   TECH TAGS
+   ========================================= */
+
+.tech-tags span {
+    border: 1px solid rgba(0, 245, 212, 0.28);
+
+    background: rgba(0, 245, 212, 0.04);
+}
+
+
+.tech-tags span:hover {
+    color: white;
+
+    border-color: #00f5d4;
+
+    box-shadow:
+        0 0 5px rgba(0, 245, 212, 0.7),
+        0 0 14px rgba(0, 245, 212, 0.25);
+}
+
+
+/* =========================================
+   IMAGES — NEON FRAME
+   ========================================= */
+
+.project-image {
+    border: 1px solid rgba(56, 189, 248, 0.30);
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.project-image:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(0, 245, 212, 0.8);
+
+    box-shadow:
+        0 0 6px rgba(0, 245, 212, 0.45),
+        0 0 22px rgba(0, 245, 212, 0.14),
+        0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   VIDEO NEON FRAME
+   ========================================= */
+
+.project-video video {
+    border: 1px solid rgba(56, 189, 248, 0.35);
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.project-video video:hover {
+    border-color: #00f5d4;
+
+    box-shadow:
+        0 0 6px rgba(0, 245, 212, 0.6),
+        0 0 25px rgba(0, 245, 212, 0.15),
+        0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   BACK TO PORTFOLIO
+   ========================================= */
+
+.back-link {
+    color: #00f5d4;
+}
+
+
+.back-link:hover {
+    color: white;
+
+    text-shadow:
+        0 0 5px #00f5d4,
+        0 0 15px rgba(0, 245, 212, 0.7),
+        0 0 25px rgba(0, 245, 212, 0.35);
+}
+
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+.project-section a {
+    color: #38bdf8;
+
+    font-weight: 600;
+}
+
+
+.project-section a:hover {
+    color: #00f5d4;
+
+    text-shadow:
+        0 0 8px rgba(0, 245, 212, 0.45);
+}
