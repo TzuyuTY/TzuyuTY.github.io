@@ -1406,21 +1406,13 @@ main > h2::after {
 
     flex-shrink: 0;
 
-    padding: 5px;
-
     border-radius: 32px;
 
-    background: linear-gradient(
-        135deg,
-        #00f5d4,
-        #38bdf8,
-        #2563eb
-    );
+    overflow: hidden;
 
     box-shadow:
-        0 0 8px rgba(0, 245, 212, 0.9),
-        0 0 20px rgba(0, 245, 212, 0.55),
-        0 0 45px rgba(0, 245, 212, 0.25);
+        0 0 15px rgba(0, 245, 212, 0.25),
+        0 0 40px rgba(0, 245, 212, 0.12);
 
     transition:
         transform 0.3s ease,
